@@ -14,9 +14,9 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(R.string.hotel_one));
-        places.add(new Place(R.string.hotel_two));
-        places.add(new Place(R.string.hotel_three));
+        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_one));
+        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_two));
+        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_three));
 
         PlaceAdapter adapter = new PlaceAdapter(this,places);
 
