@@ -9,11 +9,9 @@ package com.m6code.abujacityguide;
 public class Place {
 
     private String mPlaceName;
-    private String mPlaceLocation;
 
-    public Place(String placeName, String placeLocation){
+    public Place(String placeName){
         mPlaceName = placeName;
-        mPlaceLocation = placeLocation;
     }
 
     /**
@@ -24,7 +22,4 @@ public class Place {
         return mPlaceName;
     }
 
-    public String getmPlaceLocation(){
-        return mPlaceLocation;
-    }
 }
