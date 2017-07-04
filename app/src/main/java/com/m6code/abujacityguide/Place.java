@@ -8,9 +8,9 @@ package com.m6code.abujacityguide;
 
 public class Place {
 
-    private String mPlaceName;
+    private int mPlaceName;
 
-    public Place(String placeName){
+    public Place(int placeName){
         mPlaceName = placeName;
     }
 
@@ -18,7 +18,7 @@ public class Place {
      * Get the name of a place
      * @return the name of the place as a string
      */
-    public String getPlaceName(){
+    public int getPlaceName(){
         return mPlaceName;
     }
 

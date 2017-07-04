@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Abuja City Guide</string>
+
+    <!--List of Hotel name in Abuja-->
+    <string name="hotel_one">Hotel One</string>
+    <string name="hotel_two">Hotel Two</string>
+    <string name="hotel_three">Hotel Three</string>
+    <string name="hotel_four">Hotel Four</string>
+    <string name="hotel_five">Hotel Five</string>
+    <string name="hotel_six">Hotel Six</string>
+    <string name="hotel_">Hotel</string>
+
+    <!--List of Restaurants in Abuja-->
+    <string name="restaurants_one">Restaurants One</string>
+    <string name="restaurants_two">Restaurants Two</string>
+    <string name="restaurants_three">Restaurants Three</string>
+    <string name="restaurants_four">Restaurants Four</string>
+    <string name="restaurants_five">Restaurants Five</string>
+    <string name="restaurants_six">Restaurants Six</string>
+    <string name="restaurants_">Restaurants </string>
+
+    <!--List of Parks in Abuja-->
+    <string name="park_">Park </string>
 </resources>
