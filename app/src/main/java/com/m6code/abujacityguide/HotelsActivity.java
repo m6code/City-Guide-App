@@ -14,9 +14,11 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_one));
-        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_two));
-        places.add(new Place(R.drawable.ic_home_black, R.string.hotel_three));
+        places.add(new Place(R.drawable.grand_ibro, R.string.hotel_one));
+        places.add(new Place(R.drawable.transcorp_hilton, R.string.hotel_two));
+        places.add(new Place(R.drawable.orient_hotel, R.string.hotel_three));
+        places.add(new Place(R.drawable.luziana_hotels, R.string.hotel_four));
+        places.add(new Place(R.drawable.rockview_hotel, R.string.hotel_five));
 
         PlaceAdapter adapter = new PlaceAdapter(this,places);
 
