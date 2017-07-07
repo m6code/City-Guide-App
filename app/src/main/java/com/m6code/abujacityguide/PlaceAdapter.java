@@ -43,16 +43,33 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         // find the image for the place from the list_item.xml
         ImageView ivPlaceImage = (ImageView)listItemView.findViewById(R.id.iv_place_image);
-
-        // Get the place image from the currentWord object and set this image on the iv_place_image view
+        // Get the place image from the currentPlace object and
+        // set this image on the iv_place_image view
         ivPlaceImage.setImageResource(currentPlace.getPlaceImageID());
 
         // Set the place name on the tv_place_name of the list_item.xml
         TextView tvPlaceName = (TextView) listItemView.findViewById(R.id.tv_place_name);
-
-        // Get the place name from the currentWord object and set this text
+        // Get the place name from the currentPlace object and set this text
         // on the tv_place_name TextView
         tvPlaceName.setText(currentPlace.getPlaceNameID());
+
+        // Find the description for a place from the list_item.xml
+        TextView tvPlaceDescription = (TextView)listItemView.findViewById(R.id.tv_place_discription);
+        // Get the place description from the currentPlace object and
+        // set the correct description on the tv_place_description TextView
+        tvPlaceDescription.setText(currentPlace.getPlaceDescriptionID());
+
+        // Find the location for a place from the list_item.xml
+        TextView tvPlaceLocation = (TextView)listItemView.findViewById(R.id.tv_place_location);
+        // Get the place location from the currentPlace object and
+        // set the correct location on the tv_place_location TextView
+        tvPlaceLocation.setText(currentPlace.getPlaceLocationID());
+
+        // Find the website for a place from the list_item.xml
+        TextView tvPlaceWebsite = (TextView)listItemView.findViewById(R.id.tv_place_website);
+        // Get the place website from the currentPlace object and
+        // set the correct website on the tv_place_website textView
+        tvPlaceWebsite.setText(currentPlace.getPlaceWebsiteID());
 
         // Return the whole list item layout
         // so that it can be shown in the ListView.
