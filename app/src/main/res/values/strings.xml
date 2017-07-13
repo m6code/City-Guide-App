@@ -3,75 +3,51 @@
 
 <!--List of Hotel name in Abuja, description and their contact details starts here-->
     <!--Hotel name-->
-    <string name="hotel_one">Grand Ibro Hotel</string>
-    <string name="hotel_two">Transcorp Hilton Hotel</string>
-    <string name="hotel_three">Oriental Hotel</string>
-    <string name="hotel_four">Luziana Hotel</string>
-    <string name="hotel_five">Rockview Hotel</string>
-    <string name="hotel_six">Hotel Six</string>
+    <string name="hotel_one">Sheraton Abuja Hotel</string>
+    <string name="hotel_two">Nicon Luxury Hotel</string>
+    <string name="hotel_three">Transcorp Hilton Abuja</string>
+    <string name="hotel_four">Royal Tropicana Hotel</string>
+    <string name="hotel_five">Peace Royal Resort</string>
+    <string name="hotel_six">Bon Hotel Abuja</string>
     <string name="hotel_">Hotel</string>
 
     <!--Hotel description-->
-    <string name="decription_hotel_one">Grand Ibro Hotel features rooms of various categories and of different layouts.
-        They are : Single Bed , Economy Double , Deluxe , Suite , and Executive Suite; all with different cost implications.
-        The rooms all have a stunning view and access to an outdoor patio. In addition, each room has a television, an air-conditioner,
-        a desk area, a sofa , a telephone , a lounging area and bathrooms en- suite.
-        Most rooms are equipped with a Jacuzzi tub. It offers complimentary breakfast to guests.
+    <string name="decription_hotel_one">Warm rooms (some with balconies) feature Wi-Fi (fee), satellite TV and en suite bathrooms. Upgraded rooms add minibars, and access to a lounge with free breakfast and Wi-Fi. Suites add dining and living areas, some offer kitchenettes. Room service is available.
     </string>
-    <string name="decription_hotel_two">Transcorp Hilton Abuja is a 4 -Star , state of the art, hotel located at 1 Aguiyi Ironsi Street , Maitama, Abuja . It lies within the capital ’s commercial district and is easily accessible by road from the Nnamdi Azikiwe International Airport.
-        Hilton Abuja is strategically located near local businesses, embassies and government buildings.
-        It is also a 7 -minute drive from the world -class IBB International Golf and Country Club.
-        Transcorp Hilton Abuja has 670 luxuriously decorated rooms and offers complimentary breakfast, all- day snacks and refreshment, cocktails, local/international newspapers and magazines to all guests.
-        These rooms are categorised into : Twin Guest Room , King Guest Room, King Deluxe, King Room, Twin Guest Room , Business Suite, Ambassadorial Suite and Presidential Suite. Guests also enjoy 24 hours room service and outside catering services .
-        Transcorp Hilton Abuja offers a wide range of leisure facilities including an outdoor swimming pool, a children\'s wading pool, an onsite casino, a fitness centre, a sports hall for squash and volleyball , a barber shop, a hair salon , a tennis court, and a shopping arcade. Free WiFi is also available throughout the hotel.
-        The hotel has 7 restaurants and bars with a wide range of international and local cuisine coupled with a selection of the best wines and cocktails.
-        Transcorp Hilton offers a choice of 24 multi -purpose meeting rooms - all with air conditioning and WiFi internet access.
-        It also has 1 ,200 capacity Congress Centre. Business centre services and ATM are also available on the premises. Taxi, bus and car rental services are available at the hotel.
-        Other services on offer include safety deposit boxes , laundry / dry cleaning , car hire , 24 hours room service, event facilities, concierge, storage room, 24 hours front desk, and shops.
-        Transcorp Hilton is professionally guarded with high- end security equipment and personnel .
+    <string name="decription_hotel_two">Featuring free WiFi throughout the property, Nicon Luxury Abuja offers accommodations in Abuja. The hotel has a spa center and sauna, and guests can enjoy.
     </string>
-    <string name="decription_hotel_three">Orient Hotel is a moderately priced hotel situated at 12 Sudan Street , Wuse , Abuja.
-        Orient Hotel rooms are classified into : Suite , Standard rooms, Queen rooms, Executive rooms, and Royal rooms.
-        All rooms are fully air-conditioned and fitted with flat screen TV with cable reception, king- sized bed, wireless internet, refrigerator, wardrobe,and en-suite bathroom with a bathtub.
-        Guests receive free breakfast.
-        Guests at Orient Hotel can order local and continental dishes from the restaurant.
-        The bar also offers a variety of alcoholic and non - alcoholic drinks.
-        Laundry, car hire and airport shuttle are available at a surcharge.
-        Onsite parking space is ample and security is assured.
+    <string name="decription_hotel_three">Subdued rooms with city views offer free Wi-Fi, TVs, minifridges and marble bathrooms. Upgraded rooms add sitting areas and private lounge access. Suites feature dining areas and living rooms; some have extra bedrooms, kitchenettes and/or balconies. Room service is available.
     </string>
-    <string name="decription_hotel_four">At Luziana Hotels is a 10 minutes drive from the Central Business District and about 30 minutes from the Abuja airport.
-        Most transport companies have their terminal situated on the road leading to this hotel.
-        This cosy hotel is noted for providing an intimate and relaxed atmosphere with comfortable facilities and amenities.
-        We offer comfortable , clean accommodation units at pocket friendly prices.
-        We understand that when you are on a dinning adventure , you want the freshest vegetables , meat , poultry and fish available.
-        Our recipes and purchasing procedures are designed to ensure you always get the freshest and the best.
-        The restaurant offers a variety of Continental and local dishes throughout the day.
-        We are committed to high guest service , which we deliver through continuously employee training, relatively combine breathtaking locations , luxurious environs and the best of modern amenities with personalised and warm service delivered with genuine care.
+    <string name="decription_hotel_four">pend a night or more at Royal Tropicana Hotel, Abuja and pay less! Explore the hotel before you visit - see photos.
     </string>
-    <string name="decription_hotel_five">Offering refreshing hospitality and a wonderful mix of luxury and comfort , Rockview Hotel Classic is an indigenous 3- Star located at Plot 194 , Cadastral Zone , A 8 Adetokunbo Ademola Crescent, Wuse II , Abuja .
-        It contains 329 suites and apartments.
-        Room categories (non -smoking rules apply) available at Rockview Hotel Classic include : Ambassadorial Suite , Queens , Superior, Executive , Classic , Superior King Room . All the rooms are fitted with air- conditioners, bathtub with water heaters , LCD TVs with cable connection , worktables and chairs.
-        There are a number of hotel facilities in place for guests: An onsite restaurant where Nigerian and Chinese cuisines can be ordered off the menu ; a bar that houses a wide range of alcoholic and non - alcoholic drinks; there is an outdoor swimming pool where guests can take relaxing strokes and have their favourite cocktails from the poolside bar.
-        It has a well - equipped gym and a tennis court. Guests can also treat themselves to pastries and fast delicacies at the pastry shop . Events such as social gatherings and business meetings can be held at the function hall .
-        Rockview Hotel Classic offers car hire and shuttle services to guests, as well as a travel agency where flight tickets can be booked .
-        The hotel has a salon where guests can have their hair cut in their style of choice. There is a 24- hour front desk service and a business centre available to all visitors. Cleaning services include: Daily maid service, Ironing service , and laundry .
+    <string name="decription_hotel_five">Peace Royal Resort is located in Abuja, 6 miles from Cameroon Embassy and 7 miles from Big Church. Guests can enjoy the on-site bar.
     </string>
 
     <!--Location-->
-    <string name="location_hotel_one">2121 Micheal Okpara Road Opposite Shelter Plaza, Wuse Abuja.</string>
-    <string name="location_hotel_two">1 Aguiyi Ironsi Street Maitama , Abuja</string>
-    <string name="location_hotel_three">12 Sudan Street, Wuse Abuja</string>
-    <string name="location_hotel_four">Plot 206 , Okotie Eboh Street , Behind Chisco Transport, Utako, Abuja</string>
-    <string name="location_hotel_five">Plot 194 Cadastral Zone A8 Adetokunbo Ademola Crescent, Wuse, Abuja</string>
+    <string name="location_hotel_one">Ladi Kwali Way, 021189, Abuja</string>
+    <string name="location_hotel_two">903 Tafawa Balewa Way, Garki, Abuja</string>
+    <string name="location_hotel_three">1 Aguiyi Ironsi St, Wuse900001, Abuja</string>
+    <string name="location_hotel_four">81 A.E. Ekukinam St, Utako, Abuja</string>
+    <string name="location_hotel_five">Plot 88, 43 Crescent, 4th Avenue, Abuja</string>
 
-    <!--Book Now Link-->
-    <string name="book_hotel_one"><a href="https://hotels.ng/hotel/34353-grand-ibro-hotel-abuja/book">Book Now</a></string>
-    <string name="book_hotel_two"><a href="https://hotels.ng/hotel/72523-transcorp-hilton-abuja-abuja/book">Book Now</a></string>
-    <string name="book_hotel_three"><a href="https://hotels.ng/hotel/32651-orient-hotel-abuja/book">Book Now</a></string>
-    <string name="book_hotel_four"><a href="https://hotels.ng/hotel/62562-luziana-hotels-abuja/book">Book Now</a></string>
-    <string name="book_hotel_five"><a href="https://hotels.ng/hotel/49484-rockview-hotels-abuja/book">Book Now</a></string>
+    <!--Website Link-->
+    <string name="web_hotel_one">https://www.sheratonabuja.com</string>
+    <string name="web_hotel_two">https://www.www.niconluxury.com</string>
+    <string name="web_hotel_three">https://www.hilton.com</string>
+    <string name="web_hotel_four">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0b2978085fc1:0xd1aa41f8dc23c47e?sa=X&amp;ved=0ahUKEwjKjPLVlIbVAhVFbFAKHeZ9CmoQ9RcICjAA</string>
+    <string name="web_hotel_five">www.hotelafri.ca</string>
+
+    <!--Google map for locations-->
+	<string name="map_hotel_one">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0ba9806edb85:0x2625e67c71ff00c1?sa=X&amp;ved=0ahUKEwivgJezk4bVAhXQbVAKHcM2BKMQ9RcICzAA</string>
+	<string name="map_hotel_two">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0b97c21f3d99:0x963ef58bc0742eae?sa=X&amp;ved=0ahUKEwjh1JqAlIbVAhWOmbQKHU-hDTwQ9RcICzAA</string>
+	<string name="map_hotel_three">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104dd42594163dd1:0x2b97d2308e5f8ee1?sa=X&amp;ved=0ahUKEwjk9PyklIbVAhVGJ1AKHYHlDMMQ9RcICzAA</string>
+	<string name="map_hotel_four">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0b2978085fc1:0xd1aa41f8dc23c47e?sa=X&amp;ved=0ahUKEwjKjPLVlIbVAhVFbFAKHeZ9CmoQ9RcICjAA</string>
+	<string name="map_hotel_five">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104ddf8b22f83d41:0x365ae61733d1405e?sa=X&amp;ved=0ahUKEwir1KXulIbVAhUJY1AKHb6aDp4Q9RcICzAA</string>
+	<string name="map_hotel_six">https://www.google.com.ng/maps/dir/\'\'/\'\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0a8b0cdf69c7:0xc75098cbba9f7b67?sa=X&amp;ved=0ahUKEwjA5eCTlYbVAhXFZlAKHWVnBWgQ9RcICzAA</string>
+
 
 <!--List of Restaurants in Abuja-->
+    <!--Restuarant Name-->
     <string name="restaurants_one">Restaurants One</string>
     <string name="restaurants_two">Restaurants Two</string>
     <string name="restaurants_three">Restaurants Three</string>
@@ -80,6 +56,14 @@
     <string name="restaurants_six">Restaurants Six</string>
     <string name="restaurants_">Restaurants </string>
 
+    <!--Restuarant Information-->
+
+    <!--Restuarant Address-->
+
+    <!--Restuarant website/phone-->
+
+    <!--Restuarant Goog;e Map Location-->
+
     <!--List of Parks in Abuja-->
-    <string name="park_">Park </string>
+    <string name="park_one">Park </string>
 </resources>
