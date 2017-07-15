@@ -17,10 +17,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".HotelsActivity"
-            android:label="Hotels"
+            android:label="@string/hotels"
             android:parentActivityName=".MainActivity">
 
         </activity>
+
+        <activity
+            android:name=".ParksActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/parks"></activity>
+        <activity
+            android:name=".RestaurantsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/restaurants"></activity>
+        <activity
+            android:name=".TouristsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/tourist_site"></activity>
     </application>
 
 </manifest>
