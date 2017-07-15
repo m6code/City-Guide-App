@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--Style for the TextViews in Activity_main.xml-->
+    <style name="categoryStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
 </resources>
