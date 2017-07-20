@@ -13,15 +13,17 @@ public class Place {
     private int mPlaceDescriptionID;
     private int mPlaceLocationID;
     private int mPlaceWebsiteID;
+    private String  mPlaceMapID;
 
     public Place(int placeImageID, int placeNameID, int placeDescriptionID,
-                 int placeLocationID, int placeWebsiteID){
+                 int placeLocationID, int placeWebsiteID, String PlaceMapID){
 
         mPlaceNameID = placeNameID;
         mPlaceImageID = placeImageID;
         mPlaceDescriptionID = placeDescriptionID;
         mPlaceLocationID = placeLocationID;
         mPlaceWebsiteID = placeWebsiteID;
+        mPlaceMapID = PlaceMapID;
     }
 
     /**
@@ -62,5 +64,13 @@ public class Place {
      */
     public int getPlaceWebsiteID() {
         return mPlaceWebsiteID;
+    }
+
+    /**
+     * get the map url of a place
+     * @return the map url of a place
+     */
+    public String getPlaceMapID(){
+        return mPlaceMapID;
     }
 }

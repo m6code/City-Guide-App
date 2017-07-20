@@ -19,21 +19,20 @@
         <activity android:name=".HotelsActivity"
             android:label="@string/hotels"
             android:parentActivityName=".MainActivity">
-
         </activity>
 
         <activity
             android:name=".ParksActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/parks"></activity>
+            android:label="@string/parks"/>
         <activity
             android:name=".RestaurantsActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/restaurants"></activity>
+            android:label="@string/restaurants"/>
         <activity
             android:name=".TouristsActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/tourist_site"></activity>
+            android:label="@string/tourist_site"/>
     </application>
 
 </manifest>

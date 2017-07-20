@@ -73,6 +73,8 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         // Return the whole list item layout
         // so that it can be shown in the ListView.
+
+
         return listItemView;
     }
 }
