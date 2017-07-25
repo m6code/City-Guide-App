@@ -1,10 +1,14 @@
 package com.m6code.abujacityguide;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -15,7 +19,7 @@ public class TouristsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.place_list);
 
-        ArrayList<Place> places = new ArrayList<Place>();
+        final ArrayList<Place> places = new ArrayList<Place>();
 
         places.add(new Place(R.drawable.mosque,R.string.tourist_one,R.string.info_tourist_one,
                 R.string.address_tourist_one,R.string.web_tourist_one,
@@ -34,5 +38,22 @@ public class TouristsActivity extends AppCompatActivity {
         PlaceAdapter adapter = new PlaceAdapter(this,places);
         ListView listView = (ListView)findViewById(R.id.list_view);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // get the place map id an launch a google map view of the place
+                Place place = places.get(i);
+
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(place.getPlaceMapID()));
+
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "No App to Handle Intent", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }

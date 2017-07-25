@@ -26,6 +26,15 @@ public class Place {
         mPlaceMapID = PlaceMapID;
     }
 
+    public Place(int placeNameID, int placeLocationID,
+                 int placeWebsiteID, String PlaceMapID) {
+
+        mPlaceNameID = placeNameID;
+        mPlaceLocationID = placeLocationID;
+        mPlaceWebsiteID = placeWebsiteID;
+        mPlaceMapID = PlaceMapID;
+    }
+
     /**
      * Get the name of a place
      * @return the name id of the place

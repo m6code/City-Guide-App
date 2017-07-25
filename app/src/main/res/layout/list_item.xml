@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e0e0e0"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context="com.m6code.abujacityguide.HotelsActivity">
@@ -64,12 +63,12 @@
             android:text="@string/location_hotel_one" />
 
         <TextView
-            android:drawableStart="@drawable/ic_link"
+            android:drawableEnd="@drawable/ic_link"
             android:drawablePadding="2dp"
             android:id="@+id/tv_place_website"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:gravity="top"
+            android:gravity="end"
             android:layout_height="wrap_content"
             android:paddingEnd="4dp"
             android:paddingStart="4dp"
