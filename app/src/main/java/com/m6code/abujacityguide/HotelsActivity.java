@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -43,7 +42,7 @@ public class HotelsActivity extends AppCompatActivity {
                 R.string.web_hotel_five,
                 "https://www.google.com.ng/maps/dir/\\'\\'/\\'\\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104ddf8b22f83d41:0x365ae61733d1405e?sa=X&amp;ved=0ahUKEwir1KXulIbVAhUJY1AKHb6aDp4Q9RcICzAA"));
 
-        PlaceAdapter adapter = new PlaceAdapter(this, places);
+        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorHotels);
 
         ListView listView = (ListView) findViewById(R.id.list_view);
 

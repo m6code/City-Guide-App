@@ -34,7 +34,7 @@ public class ParksActivity extends AppCompatActivity {
                 "https://www.google.com.ng/maps/dir/\\'\\'/\\'\\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0a43d8aeb74f:0x5a876909d7a5ff13?sa=X&amp;ved=0ahUKEwjn34nDmYbVAhUFblAKHYAvCdMQ9RcICjAA"));
 
 
-        PlaceAdapter adapter = new PlaceAdapter(this, places);
+        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorParks);
         ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
 

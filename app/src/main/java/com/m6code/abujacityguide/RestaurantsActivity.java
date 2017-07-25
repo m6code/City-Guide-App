@@ -48,7 +48,7 @@ public class RestaurantsActivity extends AppCompatActivity {
                 "https://www.google.com.ng/maps/dir/\\'\\'/\\'\\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0a7ca409523f:0x18cc49b77c02f651?sa=X&amp;ved=0ahUKEwjt58PmkobVAhVMKFAKHeazASMQ9RcICzAA"));
 
 
-        PlaceAdapter adapter = new PlaceAdapter(this, places);
+        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorRestaurants);
         ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
 

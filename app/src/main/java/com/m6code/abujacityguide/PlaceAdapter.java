@@ -1,6 +1,7 @@
 package com.m6code.abujacityguide;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,13 +22,20 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
 
     /**
+     * Resource ID for the background color for this list of words
+     */
+    private int mColorResourceId;
+
+    /**
      * Create a new {@link PlaceAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param places  is the list of {@link Place}s to be displayed.
+     * @param colorResourceID is the resource ID for the background color for this list of places
      */
-    public PlaceAdapter(Context context, ArrayList<Place> places) {
+    public PlaceAdapter(Context context, ArrayList<Place> places, int colorResourceID) {
         super(context, 0, places);
+        mColorResourceId = colorResourceID;
     }
 
     @Override
@@ -83,10 +91,15 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         // set the correct website on the tv_place_website textView
         tvPlaceWebsite.setText(currentPlace.getPlaceWebsiteID());
 
+        // Set the theme color for the list item
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        // Find the color that the resource ID maps to
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        // Set the background color of the text container View
+        textContainer.setBackgroundColor(color);
+
         // Return the whole list item layout
         // so that it can be shown in the ListView.
-
-
         return listItemView;
     }
 }

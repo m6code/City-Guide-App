@@ -35,7 +35,7 @@ public class TouristsActivity extends AppCompatActivity {
                 "https://www.google.com.ng/maps/dir/\\'\\'/Location+of+the+national+stadium+abuja/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0b5a334275eb:0x3a912395bd8b3a54?sa=X&amp;ved=0ahUKEwjjmuXojYbVAhVObVAKHaDICOcQ9RcIjgEwDA"));
 
 
-        PlaceAdapter adapter = new PlaceAdapter(this,places);
+        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorTourist);
         ListView listView = (ListView)findViewById(R.id.list_view);
         listView.setAdapter(adapter);
 
