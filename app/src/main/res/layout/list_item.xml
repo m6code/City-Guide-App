@@ -34,20 +34,12 @@
         android:text="@string/decription_hotel_one"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <TextView
-        android:paddingTop="16dp"
-        android:paddingBottom="6dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Contact Information"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
 
         <TextView
             android:autoLink="map"

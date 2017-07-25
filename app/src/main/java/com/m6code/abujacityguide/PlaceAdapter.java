@@ -43,9 +43,15 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         // find the image for the place from the list_item.xml
         ImageView ivPlaceImage = (ImageView)listItemView.findViewById(R.id.iv_place_image);
-        // Get the place image from the currentPlace object and
-        // set this image on the iv_place_image view
-        ivPlaceImage.setImageResource(currentPlace.getPlaceImageID());
+        // Check if an image is provided for the place
+        if (currentPlace.hasImage()) {
+            // Get the place image from the currentPlace object and
+            // set this image on the iv_place_image view
+            ivPlaceImage.setImageResource(currentPlace.getPlaceImageID());
+        } else {
+            //Set the imageView to Gone (Hide the imageView Visibility)
+            ivPlaceImage.setVisibility(View.GONE);
+        }
 
         // Set the place name on the tv_place_name of the list_item.xml
         TextView tvPlaceName = (TextView) listItemView.findViewById(R.id.tv_place_name);
@@ -55,9 +61,15 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         // Find the description for a place from the list_item.xml
         TextView tvPlaceDescription = (TextView)listItemView.findViewById(R.id.tv_place_discription);
-        // Get the place description from the currentPlace object and
-        // set the correct description on the tv_place_description TextView
-        tvPlaceDescription.setText(currentPlace.getPlaceDescriptionID());
+        // Check if the current place has place information
+        if (currentPlace.hasPlaceInfo()) {
+            // Get the place description from the currentPlace object and
+            // set the correct description on the tv_place_description TextView
+            tvPlaceDescription.setText(currentPlace.getPlaceDescriptionID());
+        } else {
+            // Set tvPlaceDescription to gone (hide the textView for place description)
+            tvPlaceDescription.setVisibility(View.GONE);
+        }
 
         // Find the location for a place from the list_item.xml
         TextView tvPlaceLocation = (TextView)listItemView.findViewById(R.id.tv_place_location);

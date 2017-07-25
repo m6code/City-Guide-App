@@ -8,9 +8,18 @@ package com.m6code.abujacityguide;
 
 public class Place {
 
-    private int mPlaceImageID;
+    /**
+     * Constant value that represents no value provide for place
+     */
+    private static final int NOT_PROVIDED = -1;
+
+    /**
+     * Image resource ID for the place
+     */
+    private int mPlaceImageID = NOT_PROVIDED;
+
     private int mPlaceNameID;
-    private int mPlaceDescriptionID;
+    private int mPlaceDescriptionID = NOT_PROVIDED;
     private int mPlaceLocationID;
     private int mPlaceWebsiteID;
     private String  mPlaceMapID;
@@ -82,4 +91,19 @@ public class Place {
     public String getPlaceMapID(){
         return mPlaceMapID;
     }
+
+    /**
+     * Check if an image is set for the a place
+     *
+     * @return whether or not there is an image for the place
+     */
+    public boolean hasImage() {
+        return mPlaceImageID != NOT_PROVIDED;
+    }
+
+    public boolean hasPlaceInfo() {
+        return mPlaceDescriptionID != NOT_PROVIDED;
+    }
+
 }
+
