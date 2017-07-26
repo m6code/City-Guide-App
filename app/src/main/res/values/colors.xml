@@ -9,10 +9,10 @@
     <color name="colorIcons">#FFFFFF</color>
     <color name="colorDivider">#BDBDBD</color>
 
-    <color name="colorHotels">#8d6e63</color>
-    <color name="colorParks">#546e7a</color>
-    <color name="colorRestaurants">#6b3637</color>
-    <color name="colorTourist">#524c71</color>
+    <color name="colorHotels">#efebe9</color>
+    <color name="colorParks">#efebe9</color>
+    <color name="colorRestaurants">#efebe9</color>
+    <color name="colorTourist">#efebe9</color>
 
     <color name="colorWhite">#f5f5f5</color>
     <color name="colorHome">#d7ccc8</color>

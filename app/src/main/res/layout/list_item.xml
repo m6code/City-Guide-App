@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:id="@+id/text_container"
     android:padding="16dp"
-    tools:context="com.m6code.abujacityguide.HotelsActivity">
+    tools:context="com.m6code.abujacityguide.MainActivity">
 
     <TextView
         android:id="@+id/tv_place_name"
@@ -15,7 +15,7 @@
         android:layout_gravity="start"
         android:textAllCaps="false"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="monospace"
@@ -36,8 +36,8 @@
             android:padding="8dp"
             android:text="@string/decription_hotel_one"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorIcons"
-            tools:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/colorSecondaryText"
+            tools:textColor="@color/colorSecondaryText" />
 
 
     <LinearLayout
@@ -58,8 +58,8 @@
             android:paddingEnd="4dp"
             android:paddingStart="4dp"
             android:text="@string/location_hotel_one"
-            android:textColor="@color/colorIcons"
-            tools:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/colorSecondaryText"
+            tools:textColor="@color/colorSecondaryText" />
 
         <TextView
             android:id="@+id/tv_place_website"
@@ -72,8 +72,8 @@
             android:paddingEnd="4dp"
             android:paddingStart="4dp"
             android:text="@string/web_hotel_one"
-            android:textColor="@color/colorIcons"
-            tools:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/colorSecondaryText"
+            tools:textColor="@color/colorSecondaryText" />
 
     </LinearLayout>
 
