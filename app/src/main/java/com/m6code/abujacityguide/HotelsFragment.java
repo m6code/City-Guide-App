@@ -1,10 +1,13 @@
 package com.m6code.abujacityguide;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.AdapterView;
@@ -13,12 +16,22 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class HotelsActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class HotelsFragment extends Fragment {
+
+
+    public HotelsFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.place_list);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        final View rootView = inflater.inflate(R.layout.place_list, container, false);
+
 
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place(R.drawable.sheraton, R.string.hotel_one,
@@ -42,9 +55,9 @@ public class HotelsActivity extends AppCompatActivity {
                 R.string.web_hotel_five,
                 "https://www.google.com.ng/maps/dir/\\'\\'/\\'\\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104ddf8b22f83d41:0x365ae61733d1405e?sa=X&amp;ved=0ahUKEwir1KXulIbVAhUJY1AKHb6aDp4Q9RcICzAA"));
 
-        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorHotels);
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), places, R.color.colorHotels);
 
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
 
@@ -64,14 +77,18 @@ public class HotelsActivity extends AppCompatActivity {
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse(place.getPlaceMapID()));
 
-                if (mapIntent.resolveActivity(getPackageManager()) !=null){
+                if (mapIntent.resolveActivity(rootView.getContext().getPackageManager()) != null) {
                     startActivity(mapIntent);
                 }
                 else {
-                    Toast.makeText(getApplicationContext(), "No App to Handle Intent", Toast.LENGTH_LONG).show();
+                    Toast.makeText(rootView.getContext().getApplicationContext(),
+                            "No App to Handle Intent", Toast.LENGTH_LONG).show();
                 }
 
             }
         });
+
+        return rootView;
     }
+
 }
