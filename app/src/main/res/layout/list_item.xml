@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:id="@+id/text_container"
     android:padding="16dp"
-    tools:context="com.m6code.abujacityguide.MainActivity">
+    tools:context="com.m6code.abujacityguide.SplashScreenActivity">
 
     <TextView
         android:id="@+id/tv_place_name"
