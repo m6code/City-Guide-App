@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,6 +32,42 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Sets onClick Listener on the Hotels TextView to Launch the HotelsActivity
+        TextView tvHotels = (TextView) findViewById(R.id.tv_hotels);
+        tvHotels.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startHotels();
+            }
+        });
+
+        // Sets onClick Listener on the Parks TextView to Launch the ParksActivity
+        TextView tvParks = (TextView) findViewById(R.id.tv_parks);
+        tvParks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startParks();
+            }
+        });
+
+        // Sets onClick Listener on the Restaurants TextView to Launch the RestaurantsActivity
+        TextView tvRestaurants = (TextView) findViewById(R.id.tv_restaurants);
+        tvRestaurants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startRestaurants();
+            }
+        });
+
+        // Sets onClick Listener on the Tourist TextView to Launch the TouristsActivity
+        TextView tvTourists = (TextView) findViewById(R.id.tv_tourist);
+        tvTourists.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startTourists();
+            }
+        });
     }
 
     @Override
@@ -72,19 +110,21 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_hotels) {
-            // Handle the camera action
+            startHotels();
         } else if (id == R.id.nav_parks) {
+            startParks();
 
         } else if (id == R.id.nav_restaurants) {
+            startRestaurants();
 
         } else if (id == R.id.nav_tourist) {
+            startTourists();
 
         }
 
