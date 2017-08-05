@@ -1,34 +1,25 @@
 package com.m6code.abujacityguide;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class RestaurantsFragment extends Fragment {
 
-
-    public RestaurantsFragment() {
-        // Required empty public constructor
-    }
-
+public class RestaurantsActivity extends AppCompatActivity {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.place_list, container, false);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.place_list);
 
         final ArrayList<Place> places = new ArrayList<>();
         places.add(new Place(R.string.restaurants_one, R.string.address_restaurants_one,
@@ -57,8 +48,8 @@ public class RestaurantsFragment extends Fragment {
                 "https://www.google.com.ng/maps/dir/\\'\\'/\\'\\'/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0a7ca409523f:0x18cc49b77c02f651?sa=X&amp;ved=0ahUKEwjt58PmkobVAhVMKFAKHeazASMQ9RcICzAA"));
 
 
-        PlaceAdapter adapter = new PlaceAdapter(getContext(), places, R.color.colorRestaurants);
-        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
+        PlaceAdapter adapter = new PlaceAdapter(this, places, R.color.colorHome);
+        ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -70,15 +61,12 @@ public class RestaurantsFragment extends Fragment {
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse(place.getPlaceMapID()));
 
-                if (mapIntent.resolveActivity(rootView.getContext().getPackageManager()) != null) {
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(mapIntent);
                 } else {
-                    Toast.makeText(rootView.getContext().getApplicationContext(), "No App to Handle Intent", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "No App to Handle Intent", Toast.LENGTH_LONG).show();
                 }
             }
         });
-
-        return rootView;
     }
-
 }

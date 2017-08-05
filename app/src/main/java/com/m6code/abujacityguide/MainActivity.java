@@ -95,25 +95,25 @@ public class MainActivity extends AppCompatActivity
 
     // Starts the Hotels Activity
     public void startHotels() {
-        Intent intent = new Intent(this, HotelsFragment.class);
+        Intent intent = new Intent(this, HotelsActivity.class);
         startActivity(intent);
     }
 
     //Starts the Parks Activity
     public void startParks() {
-        Intent intent = new Intent(this, ParksFragment.class);
+        Intent intent = new Intent(this, ParksActivity.class);
         startActivity(intent);
     }
 
     // Starts the Restaurants Activity
     public void startRestaurants() {
-        Intent intent = new Intent(this, RestaurantsFragment.class);
+        Intent intent = new Intent(this, RestaurantsActivity.class);
         startActivity(intent);
     }
 
     // Starts the Tourist Activity
     public void startTourists() {
-        Intent intent = new Intent(this, TouristsFragment.class);
+        Intent intent = new Intent(this, TouristsActivity.class);
         startActivity(intent);
     }
 }

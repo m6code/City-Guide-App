@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,15 +17,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".HotelsFragment"
+            android:name=".MainActivity"
+            android:label="Abuja City Guide"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".HotelsActivity"
             android:label="Hotels"
             android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ParksActivity"
+            android:label="Parks"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".RestaurantsActivity"
+            android:label="Restaurants"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".TouristsActivity"
+            android:label="Tourist"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>
